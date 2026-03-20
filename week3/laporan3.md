@@ -10,59 +10,119 @@ HTTP (HyperText Transfer Protocol) adalah protokol yang digunakan untuk komunika
 ## Langkah Percobaan
 ### A. Basic HTTP GET/Response
 1. Buka browser
+
 2. Jalankan Wireshark
+
 3. Klik start untuk mulai proses capture paket
+
 4. Mengakses website
 http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file1.html
+
 ![file1](../assets/image/file1.png)
 
 5. Menggunakan filter **http** untuk menampilkan paket HTTP saja
 
+![filter http](../assets/image/Filter%20HTTP.png)
+
 6. Mengamati paket yang tertangkap pada Wireshark
+
+![hasil file 1](../assets/image/hasil%20file1.png)
+
 7. Stop capture
 
 Berdasarkan hasil pengamatan menggunakan Wireshark, terlihat dua paket utama yaitu HTTP GET dari client ke server dan HTTP 200 OK sebagai respon dari server. Hal ini menunjukkan bahwa proses dasar HTTP berjalan dengan cara client meminta data dan server memberikan balasan berupa halaman web yang diminta. Dari sini dapat dipahami bahwa komunikasi HTTP bersifat request dan response
 
 ### B. HTTP Conditional GET
 1. Hapus cache browser
+
 2. Start capture Wireshark
+
 3. Mengakses website
 http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file2.html
+
+![file2](../assets/image/file2.png)
+
 4. Menggunakan filter **http** untuk menampilkan paket HTTP saja
-5. Refresh halaman
+
+5. Refresh halaman dan mengamati paket yang tertangkap pada Wireshark
+
+![hasil file 2-1](../assets/image/hasil%20file%202-1.png)
+
+![hasil file 2-2](../assets/image/hasil%20file%202-2.png)
+
+![hasil file 2-3](../assets/image/hasil%20file%202-3.png)
+
+
 6. Stop capture
 
 Pada percobaan ini, request kedua yang dikirim browser mengandung header If-Modified-Since. Jika data di server tidak mengalami perubahan, maka server tidak mengirim ulang data, melainkan hanya memberikan respon 304 Not Modified. Hal ini menunjukkan bahwa browser memanfaatkan cache untuk mempercepat akses dan menghemat penggunaan data, karena tidak perlu mendownload ulang file yang sama
 
 ### C. Retrieving Long Documents
 1. Hapus cache
+
 2. Start capture
+
 3. Mengakses website
 http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file3.html
+
+![file3](../assets/image/file3.png)
+
 4. Menggunakan filter **http** untuk menampilkan paket HTTP saja
-5. Stop capture
+
+5. Mengamati paket yang tertangkap pada Wireshark
+
+![hasil file 3-1](../assets/image/hasil%20file%203-1.png)
+
+![hasil file 3-2](../assets/image/hasil%20file%203-2.png)
+
+6. Stop capture
 
 Saat mengakses file HTML yang panjang, hasil di Wireshark menunjukkan bahwa response dari server tidak dikirim dalam satu paket saja, melainkan terbagi menjadi beberapa segmen TCP. Hal ini terjadi karena ukuran file cukup besar sehingga harus dipecah agar dapat dikirim melalui jaringan. Dengan demikian, dapat disimpulkan bahwa HTTP bekerja bersama TCP untuk mengirim data dalam bentuk potongan-potongan kecil
 
 ### D. HTML dengan Embedded Objects
 1. Hapus cache
+
 2. Start capture
+
 3. Mengakses website
 http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file4.html
+
+![file4](../assets/image/file4.png)
+
 4. Menggunakan filter **http** untuk menampilkan paket HTTP saja
-5. Stop capture
+
+5. Mengamati paket yang tertangkap pada Wireshark
+
+![hasil file 4-1](../assets/image/hasil%20file%204-1.png)
+
+![hasil file 4-2](../assets/image/hasil%20file%204-2.png)
+
+![hasil file 4-3](../assets/image/hasil%20file%204-3.png)
+
+6. Stop capture
 
 Dari hasil pengamatan, ketika membuka halaman yang memiliki gambar, browser tidak hanya mengirim satu request, tetapi beberapa request tambahan untuk mengambil setiap objek (seperti gambar) yang terdapat pada halaman tersebut. Artinya, satu halaman web sebenarnya terdiri dari banyak resource yang harus diminta secara terpisah oleh browser agar halaman dapat ditampilkan secara lengkap
 
 ### E. HTTP Authentication
 1. Hapus cache
+
 2. Start capture
+
 3. Mengakses website
 http://gaia.cs.umass.edu/wireshark-labs/protected_pages/HTTP-wireshark-file5.html
-4. Menggunakan filter **http** untuk menampilkan paket HTTP saja
-5. Login :
+
+Login :
 - Username : wireshark-students
 - Password : network
+
+![login](../assets/image/login.png)
+
+![file5](../assets/image/file5.png)
+
+4. Menggunakan filter **http** untuk menampilkan paket HTTP saja 
+
+5. Mengamati paket yang tertangkap pada Wireshark
+
 6. Stop capture
 
 Pada percobaan autentikasi, terlihat adanya header Authorization: Basic yang berisi username dan password dalam bentuk encoding Base64. Meskipun terlihat seperti terenkripsi, sebenarnya data tersebut hanya diubah formatnya dan masih bisa dikembalikan ke bentuk aslinya. Hal ini menunjukkan bahwa HTTP biasa tidak aman untuk proses login karena informasi sensitif masih bisa dibaca oleh pihak lain jika disadap
