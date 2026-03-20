@@ -1,11 +1,11 @@
 # Laporan Praktikum Modul 3 (HTTP)
 
+HTTP (HyperText Transfer Protocol) adalah protokol yang digunakan untuk komunikasi antara browser (client) dan server web. Saat kita membuka website, browser akan mengirim HTTP Request (biasanya GET), lalu server akan membalas dengan HTTP Response yang berisi data halaman web
+
 ## Tujuan Praktikum
 1. Memahami cara kerja protokol HTTP menggunakan Wireshark
 2. Mengamati proses request dan response pada HTTP
 3. Memahami dasar autentikasi pada HTTP
-
-HTTP (HyperText Transfer Protocol) adalah protokol yang digunakan untuk komunikasi antara browser (client) dan server web. Saat kita membuka website, browser akan mengirim HTTP Request (biasanya GET), lalu server akan membalas dengan HTTP Response yang berisi data halaman web
 
 ## Langkah Percobaan
 ### A. Basic HTTP GET/Response
