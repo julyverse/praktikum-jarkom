@@ -123,6 +123,8 @@ Login :
 
 5. Mengamati paket yang tertangkap pada Wireshark
 
+![hasil file 5](../assets/image/hasil%20file%205.png)
+
 6. Stop capture
 
 Pada percobaan autentikasi, terlihat adanya header Authorization: Basic yang berisi username dan password dalam bentuk encoding Base64. Meskipun terlihat seperti terenkripsi, sebenarnya data tersebut hanya diubah formatnya dan masih bisa dikembalikan ke bentuk aslinya. Hal ini menunjukkan bahwa HTTP biasa tidak aman untuk proses login karena informasi sensitif masih bisa dibaca oleh pihak lain jika disadap
