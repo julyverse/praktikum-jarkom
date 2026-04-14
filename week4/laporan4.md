@@ -35,7 +35,7 @@ melalui salah satu server yang didapatkan di pertanyaan nomor 2. Apa alamat IP-n
 Perintah ipconfig digunakan untuk melihat informasi konfigurasi jaringan pada komputer. Selain itu, ipconfig juga dapat digunakan untuk melihat apakah komputer sudah terhubung ke jaringan dengan benar. Secara sederhana, ipconfig berfungsi untuk mengecek dan menampilkan informasi jaringan pada perangkat kita
 
 ### C. Tracing DNS dengan Wireshark
-## Soal 1
+# Soal 1
 1. Cari pesan permintaan DNS dan balasannya. Apakah pesan tersebut dikirimkan melalui UDP
 atau TCP?
 
@@ -77,7 +77,7 @@ mengakses suatu gambar?
 
 Tidak memerlukan request DNS baru, karena dapat menggunakan cache DNS yang sudah tersimpan
 
-## Soal 2
+# Soal 2
 1. Apa port tujuan pada pesan permintaan DNS? Apa port sumber pada pesan balasan DNS?
 
 [c1-1](../assets/image/Screenshot%20(4641).png)
@@ -105,7 +105,7 @@ dalamnya. Apa saja isi yang terkandung dalam setiap jawaban tersebut?
 
 5. Sertakan hasil tangkapan layar
 
-## Soal 3
+# Soal 3
 1. Ke alamat IP manakah pesan permintaan DNS dikirimkan? Apakah alamat IP tersebut
 merupakan default alamat IP server DNS lokal Anda?
 
@@ -125,9 +125,7 @@ Apakah pesan balasan ini juga memberikan alamat IP untuk server MIT tersebut?
 
 4. Sertakan hasil tangkapan layar
 
-
-
-## Soal 4
+# Soal 4
 1. Ke alamat IP manakah pesan permintaan DNS dikirimkan? Apakah alamat IP tersebut
 merupakan default alamat IP server DNS lokal Anda?
 
