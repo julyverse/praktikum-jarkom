@@ -80,9 +80,9 @@ Tidak memerlukan request DNS baru, karena dapat menggunakan cache DNS yang sudah
 # Soal 2
 1. Apa port tujuan pada pesan permintaan DNS? Apa port sumber pada pesan balasan DNS?
 
-[c1-1](../assets/image/Screenshot%20(4641).png)
+[c11](../assets/image/Screenshot%20(4641).png)
 
-[c1-2](../assets/image/Screenshot%20(4642).png)
+[c12](../assets/image/Screenshot%20(4642).png)
 
 2. Ke alamat IP manakah pesan permintaan DNS dikirimkan? Apakah alamat IP tersebut
 merupakan default alamat IP server DNS lokal Anda?
@@ -94,9 +94,9 @@ Ya, alamat tersebut merupakan default alamat IP server DNS lokal pada rekaman pa
 3. Periksa pesan permintaan DNS. Apa ”jenis” atau ”type” dari pesan tersebut? Apakah pesan
 tersebut mengandung ”jawaban” atau ”answers”?
 
-[c3-1](../assets/image/Screenshot%20(4639).png)
+[c31](../assets/image/Screenshot%20(4639).png)
 
-[c3-2](../assets/image/Screenshot%20(4640).png)
+[c32](../assets/image/Screenshot%20(4640).png)
 
 4. Periksa pesan balasan DNS. Berapa banyak ”jawaban” atau “answers” yang terdapat di
 dalamnya. Apa saja isi yang terkandung dalam setiap jawaban tersebut?
@@ -109,9 +109,9 @@ dalamnya. Apa saja isi yang terkandung dalam setiap jawaban tersebut?
 1. Ke alamat IP manakah pesan permintaan DNS dikirimkan? Apakah alamat IP tersebut
 merupakan default alamat IP server DNS lokal Anda?
 
-[d1-1](../assets/image/Screenshot%20(4645).png)
+[d11](../assets/image/Screenshot%20(4645).png)
 
-[d1-2](../assets/image/Screenshot%20(4646).png)
+[d12](../assets/image/Screenshot%20(4646).png)
 
 2. Periksa pesan permintaan DNS. Apa ”jenis” atau ”type” dari pesan tersebut? Apakah pesan
 tersebut mengandung ”jawaban” atau ”answers”?
@@ -134,9 +134,9 @@ merupakan default alamat IP server DNS lokal Anda?
 2. Periksa pesan permintaan DNS. Apa ”jenis” atau ”type” dari pesan tersebut? Apakah pesan
 tersebut mengandung ”jawaban” atau ”answers”?
 
-[e2-1](../assets/image/Screenshot%20(4647).png)
+[e21](../assets/image/Screenshot%20(4647).png)
 
-[e2-2](../assets/image/Screenshot%20(4649).png)
+[e22](../assets/image/Screenshot%20(4649).png)
 
 3. Periksa pesan balasan DNS. Berapa banyak ”jawaban” atau “answers” yang terdapat di
 dalamnya. Apa saja isi yang terkandung dalam setiap jawaban tersebut?
