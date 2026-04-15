@@ -53,5 +53,15 @@ Karena port menggunakan 16-bit, maka nomor port maksimum adalah 65535
 
 ![5-7-2](../assets/image/Screenshot%20(4668).png)
 
+Terjadi hubungan sebagai berikut:
+# Paket pertama (request):
+- Source Port = port client
+- Destination Port = port server
+# Paket kedua (response):
+- Source Port = port server
+- Destination Port = port client
+
+Hal ini menunjukkan bahwa terjadi pertukaran (swap) port antara pengirim dan penerima, sehingga data dapat dikirim kembali ke client yang benar
+
 ## Kesimpulan
 Dari praktikum ini, dapat disimpulkan bahwa UDP adalah protokol yang sederhana dan cepat karena tidak menggunakan koneksi dan tidak menjamin pengiriman data seperti TCP. Header UDP terdiri dari beberapa bagian penting seperti port sumber, port tujuan, panjang data, dan checksum. Selain itu, komunikasi UDP terjadi dengan cara saling bertukar nomor port antara pengirim dan penerima. Karena sifatnya yang ringan, UDP cocok digunakan untuk layanan yang membutuhkan kecepatan tinggi, meskipun ada risiko data tidak sampai atau hilang
