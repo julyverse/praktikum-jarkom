@@ -54,10 +54,10 @@ Karena port menggunakan 16-bit, maka nomor port maksimum adalah 65535
 ![5-7-2](../assets/image/Screenshot%20(4668).png)
 
 Terjadi hubungan sebagai berikut:
-# Paket pertama (request):
+1. Paket pertama (request):
 - Source Port = port client
 - Destination Port = port server
-# Paket kedua (response):
+2. Paket kedua (response):
 - Source Port = port server
 - Destination Port = port client
 
