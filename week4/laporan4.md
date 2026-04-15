@@ -80,28 +80,28 @@ Tidak memerlukan request DNS baru, karena dapat menggunakan cache DNS yang sudah
 # Soal 2
 1. Apa port tujuan pada pesan permintaan DNS? Apa port sumber pada pesan balasan DNS?
 
-[c11](../assets/image/Screenshot%20(4641).png)
+![c11](../assets/image/Screenshot%20(4641).png)
 
-[c12](../assets/image/Screenshot%20(4642).png)
+![c12](../assets/image/Screenshot%20(4642).png)
 
 2. Ke alamat IP manakah pesan permintaan DNS dikirimkan? Apakah alamat IP tersebut
 merupakan default alamat IP server DNS lokal Anda?
 
-[c2](../assets/image/Screenshot%20(4639).png)
+![c2](../assets/image/Screenshot%20(4639).png)
 
 Ya, alamat tersebut merupakan default alamat IP server DNS lokal pada rekaman paket tersebut
 
 3. Periksa pesan permintaan DNS. Apa ”jenis” atau ”type” dari pesan tersebut? Apakah pesan
 tersebut mengandung ”jawaban” atau ”answers”?
 
-[c31](../assets/image/Screenshot%20(4639).png)
+![c31](../assets/image/Screenshot%20(4639).png)
 
-[c32](../assets/image/Screenshot%20(4640).png)
+![c32](../assets/image/Screenshot%20(4640).png)
 
 4. Periksa pesan balasan DNS. Berapa banyak ”jawaban” atau “answers” yang terdapat di
 dalamnya. Apa saja isi yang terkandung dalam setiap jawaban tersebut?
 
-[c4](../assets/image/Screenshot%20(4648).png)
+![c4](../assets/image/Screenshot%20(4648).png)
 
 5. Sertakan hasil tangkapan layar
 
@@ -109,19 +109,19 @@ dalamnya. Apa saja isi yang terkandung dalam setiap jawaban tersebut?
 1. Ke alamat IP manakah pesan permintaan DNS dikirimkan? Apakah alamat IP tersebut
 merupakan default alamat IP server DNS lokal Anda?
 
-[d11](../assets/image/Screenshot%20(4645).png)
+![d11](../assets/image/Screenshot%20(4645).png)
 
-[d12](../assets/image/Screenshot%20(4646).png)
+![d12](../assets/image/Screenshot%20(4646).png)
 
 2. Periksa pesan permintaan DNS. Apa ”jenis” atau ”type” dari pesan tersebut? Apakah pesan
 tersebut mengandung ”jawaban” atau ”answers”?
 
-[d2](../assets/image/Screenshot%20(4647).png)
+![d2](../assets/image/Screenshot%20(4647).png)
 
 3. Periksa pesan balasan DNS. Apa nama server MIT yang diberikan oleh pesan balasan?
 Apakah pesan balasan ini juga memberikan alamat IP untuk server MIT tersebut?
 
-[d3](../assets/image/Screenshot%20(4648).png)
+![d3](../assets/image/Screenshot%20(4648).png)
 
 4. Sertakan hasil tangkapan layar
 
@@ -129,19 +129,19 @@ Apakah pesan balasan ini juga memberikan alamat IP untuk server MIT tersebut?
 1. Ke alamat IP manakah pesan permintaan DNS dikirimkan? Apakah alamat IP tersebut
 merupakan default alamat IP server DNS lokal Anda?
 
-[e1](../assets/image/Screenshot%20(4646).png)
+![e1](../assets/image/Screenshot%20(4646).png)
 
 2. Periksa pesan permintaan DNS. Apa ”jenis” atau ”type” dari pesan tersebut? Apakah pesan
 tersebut mengandung ”jawaban” atau ”answers”?
 
-[e21](../assets/image/Screenshot%20(4647).png)
+![e21](../assets/image/Screenshot%20(4647).png)
 
-[e22](../assets/image/Screenshot%20(4649).png)
+![e22](../assets/image/Screenshot%20(4649).png)
 
 3. Periksa pesan balasan DNS. Berapa banyak ”jawaban” atau “answers” yang terdapat di
 dalamnya. Apa saja isi yang terkandung dalam setiap jawaban tersebut?
 
-[e3](../assets/image/Screenshot%20(4648).png)
+![e3](../assets/image/Screenshot%20(4648).png)
 
 4. Sertakan hasil tangkapan layar
 
