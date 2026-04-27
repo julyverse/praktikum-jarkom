@@ -1,67 +1,26 @@
-# Laporan Praktikum Modul 5 (UDP)
+# Laporan Praktikum Modul 7 (Socket Programming – Membuat Aplikasi Jaringan)
 
-User Datagram Protocol (UDP) merupakan salah satu protokol pada layer transport yang bersifat sederhana dan tidak memiliki mekanisme kontrol seperti TCP. UDP tidak melakukan pengecekan koneksi, tidak menjamin pengiriman data, serta tidak melakukan retransmisi jika terjadi kehilangan paket. Karena sifatnya yang ringan dan cepat, UDP sering digunakan pada aplikasi yang membutuhkan kecepatan tinggi seperti streaming
+Socket programming adalah teknik dalam jaringan komputer yang digunakan untuk membuat komunikasi antara dua program, yaitu client dan server, melalui sebuah socket sebagai perantara. Socket berfungsi sebagai titik penghubung yang memungkinkan pengiriman dan penerimaan data menggunakan protokol seperti TCP (yang andal dan berbasis koneksi) atau UDP (yang lebih cepat tetapi tanpa jaminan pengiriman), sehingga aplikasi dapat saling bertukar informasi melalui jaringan
 
 ## Tujuan Praktikum
-1. Mahasiswa dapat menginvestigasi cara kerja protokol UDP menggunakan Wireshark.
+1. Mahasiswa dapat membuat program berbasis socket UDP
+2. Mahasiswa dapat membuat program berbasis socket TCP
 
-## Pertanyaan
-1. Pilih satu paket UDP yang terdapat pada trace Anda. Dari paket tersebut, berapa banyak “field” yang terdapat pada header UDP? Sebutkan nama-nama field yang Anda temukan!
+## Langkah Percobaan
+### Percobaan UDP
+1. Membuat program client (udp-client.py)
 
-![5-1](../assets/image/Screenshot%20(4658).png)
+2. Membuat program server (udp-server.py)
 
-Terdapat 4 field utama pada header UDP yaitu Source Port, Destination Port, Length, dan Checksum
+### Percobaan TCP
+1. Membuat program client (tcpClient.py)
 
-2. Perhatikan informasi “content field” pada paket yang Anda pilih di pertanyaan 1. Berapa panjang (dalam satuan byte) masing-masing “field” yang terdapat pada header UDP?
+2. Membuat program server (tcpServer.py)
 
-![5-2-1](../assets/image/Screenshot%20(4660).png)
+## Hasil Percobaan
+1. Hasil UDP
 
-![5-2-2](../assets/image/Screenshot%20(4661).png)
-
-![5-2-3](../assets/image/Screenshot%20(4662).png)
-
-![5-2-4](../assets/image/Screenshot%20(4663).png)
-
-Setiap field pada header UDP memiliki ukuran sebagai berikut:
-- Source Port = 2 byte
-- Destination Port = 2 byte
-- Length = 2 byte
-- Checksum = 2 byte
-Sehingga total panjang header UDP adalah 8 byte
-
-3. Nilai yang tertera pada ”Length” menyatakan nilai apa? Verfikasi jawaban Anda melalui paket UDP pada trace
-
-![5-3](../assets/image/Screenshot%20(4665).png)
-
-Nilai Length pada paket UDP adalah 58 byte, sedangkan ukuran payload adalah 50 byte. Hal ini sesuai dengan struktur UDP, di mana panjang total terdiri dari header sebesar 8 byte dan payload sebesar 50 byte. Dengan demikian, nilai Length menunjukkan total ukuran keseluruhan segmen UDP
-
-4. Berapa jumlah maksimum byte yang dapat disertakan dalam payload UDP? (Petunjuk: jawaban untuk pertanyaan ini dapat ditentukan dari jawaban Anda untuk pertanyaan 2)
-
-Berdasarkan teori, ukuran maksimum paket IP adalah 65535 byte karena field length menggunakan 16-bit. Setelah dikurangi header IP (20 byte) dan header UDP (8 byte), maka maksimum payload UDP adalah 65507 byte
-
-5. Berapa nomor port terbesar yang dapat menjadi port sumber? (Petunjuk: lihat petunjuk pada pertanyaan 4)
-
-Karena port menggunakan 16-bit, maka nomor port maksimum adalah 65535
-
-6. Berapa nomor protokol untuk UDP? Berikan jawaban Anda dalam notasi heksadesimal dan desimal. Untuk menjawab pertanyaan ini, Anda harus melihat ke bagian ”Protocol” pada datagram IP yang mengandung segmen UDP
-
-![5-6](../assets/image/Screenshot%202026-04-15%20015410.png)
-
-7. Periksa pasangan paket UDP di mana host Anda mengirimkan paket UDP pertama dan paket UDP kedua merupakan balasan dari paket UDP yang pertama. (Petunjuk: agar paket kedua merupakan balasan dari paket pertama, pengirim paket pertama harus menjadi tujuan dari paket kedua). Jelaskan hubungan antara nomor port pada kedua paket tersebut!
-
-![5-7-1](../assets/image/Screenshot%20(4669).png)
-
-![5-7-2](../assets/image/Screenshot%20(4668).png)
-
-Terjadi hubungan sebagai berikut:
-1. Paket pertama (request):
-- Source Port = port client
-- Destination Port = port server
-2. Paket kedua (response):
-- Source Port = port server
-- Destination Port = port client
-
-Hal ini menunjukkan bahwa terjadi pertukaran (swap) port antara pengirim dan penerima, sehingga data dapat dikirim kembali ke client yang benar
+2. Hasil TCP
 
 ## Kesimpulan
-Dari praktikum ini, dapat disimpulkan bahwa UDP adalah protokol yang sederhana dan cepat karena tidak menggunakan koneksi dan tidak menjamin pengiriman data seperti TCP. Header UDP terdiri dari beberapa bagian penting seperti port sumber, port tujuan, panjang data, dan checksum. Selain itu, komunikasi UDP terjadi dengan cara saling bertukar nomor port antara pengirim dan penerima. Karena sifatnya yang ringan, UDP cocok digunakan untuk layanan yang membutuhkan kecepatan tinggi, meskipun ada risiko data tidak sampai atau hilang
+Dari praktikum ini, dapat disimpulkan bahwa socket programming memungkinkan komunikasi antara client dan server dalam jaringan menggunakan protokol UDP dan TCP, di mana UDP bersifat cepat tanpa koneksi dan tidak menjamin pengiriman data, sedangkan TCP lebih andal karena menggunakan koneksi dan menjamin data sampai dengan urutan yang benar. Praktikum ini membantu memahami konsep dasar komunikasi jaringan secara langsung melalui implementasi program
