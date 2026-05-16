@@ -1,10 +1,9 @@
-# Laporan Praktikum Modul 7 (Socket Programming – Membuat Aplikasi Jaringan)
+# Laporan Praktikum Modul 9 (Web Server)
 
-Socket programming adalah teknik dalam jaringan komputer yang digunakan untuk membuat komunikasi antara dua program, yaitu client dan server, melalui sebuah socket sebagai perantara. Socket berfungsi sebagai titik penghubung yang memungkinkan pengiriman dan penerimaan data menggunakan protokol seperti TCP (yang andal dan berbasis koneksi) atau UDP (yang lebih cepat tetapi tanpa jaminan pengiriman), sehingga aplikasi dapat saling bertukar informasi melalui jaringan
+Web server merupakan perangkat lunak yang berfungsi menerima permintaan (request) dari client melalui protokol HTTP kemudian mengirimkan respons berupa halaman web atau file lainnya
 
 ## Tujuan Praktikum
-1. Dapat membuat program berbasis socket UDP
-2. Dapat membuat program berbasis socket TCP
+1. Mahasiswa bisa membuat program web server sederhana berbasis TCP socket programming
 
 ## Langkah Percobaan
 ### Percobaan UDP
