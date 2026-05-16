@@ -103,10 +103,6 @@ print("[SYSTEM] socket server telah ditutup")
 ### Percobaan TCP
 1. Membuat program client (tcpClient.py)
 
-Program berikut digunakan untuk membuat client yang terhubung ke server menggunakan protokol TCP
-
-### Kode Program
-
 ```python
 from socket import *
 
