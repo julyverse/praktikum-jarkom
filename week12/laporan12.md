@@ -1,6 +1,6 @@
 # Laporan Praktikum Modul 12 (ICMP)
 
-Internet Control Message Protocol (ICMP) adalah protokol yang digunakan untuk membantu proses komunikasi dan pengecekan kondisi jaringan. ICMP sering digunakan oleh aplikasi seperti Ping dan Traceroute untuk memeriksa apakah suatu perangkat dapat dihubungi serta mengetahui jalur yang dilewati paket data menuju tujuan. Pada Ping, komputer mengirim pesan Echo Request dan menerima Echo Reply sebagai balasan. Sementara itu, Traceroute memanfaatkan nilai TTL (Time To Live) dan pesan Time Exceeded dari router untuk menampilkan rute yang dilalui paket dalam jaringan.
+Internet Control Message Protocol (ICMP) adalah protokol yang digunakan untuk membantu proses komunikasi dan pengecekan kondisi jaringan. ICMP sering digunakan oleh aplikasi seperti Ping dan Traceroute untuk memeriksa apakah suatu perangkat dapat dihubungi serta mengetahui jalur yang dilewati paket data menuju tujuan. Pada Ping, komputer mengirim pesan Echo Request dan menerima Echo Reply sebagai balasan. Sementara itu, Traceroute memanfaatkan nilai TTL (Time To Live) dan pesan Time Exceeded dari router untuk menampilkan rute yang dilalui paket dalam jaringan
 
 ## Tujuan Praktikum
 1. Dapat menginvestigasi cara kerja protokol ICMP menggunakan Wireshark
