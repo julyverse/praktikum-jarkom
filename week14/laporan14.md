@@ -25,18 +25,19 @@ Informasi ini menunjukkan bahwa AP "30 Munroe St" beroperasi pada channel 6
 ![14-5](../assets/image/Screenshot%20(5128).png)
 
 Bagian "Tagged parameters" pada beacon frame berisi sejumlah informasi tambahan yang disiarkan oleh AP. Pada beacon frame yang diamati, ditemukan beberapa tag penting, antara lain:
-•	Tag: SSID parameter set, bernilai "30 Munroe St" -> ini adalah nama jaringan WiFi yang ditampilkan kepada pengguna
-•	Tag: Supported Rates 1(B), 2(B), 5.5(B), 11(B) [Mbit/sec] -> kecepatan transmisi data yang didukung oleh AP
-•	Tag: DS Parameter set: Current Channel: 6 -> menunjukkan channel operasi AP, sesuai dengan informasi radio sebelumnya
+1. Tag: SSID parameter set, bernilai "30 Munroe St" -> ini adalah nama jaringan WiFi yang ditampilkan kepada pengguna
+2. Tag: Supported Rates 1(B), 2(B), 5.5(B), 11(B) [Mbit/sec] -> kecepatan transmisi data yang didukung oleh AP
+3. Tag: DS Parameter set: Current Channel: 6 -> menunjukkan channel operasi AP, sesuai dengan informasi radio sebelumnya
+dll
 
 ## Analisis Transfer Data
 
 ![14-6](../assets/image/Screenshot%20(5134).png)
 
 Sebelum data HTTP dapat dikirimkan, terlebih dahulu dilakukan proses pembentukan koneksi TCP (three-way handshake) antara host dengan server gaia.cs.umass.edu. Urutan paketnya adalah sebagai berikut:
-•	Paket No. 474: host mengirim segmen [SYN] dengan Seq=0 kepada server
-•	Paket No. 476: server membalas dengan segmen [SYN, ACK] dengan Seq=0, Ack=1
-•	Paket No. 478: host membalas dengan segmen [ACK] Seq=1, Ack=1, sehingga koneksi TCP resmi terbentuk
+1. Paket No. 474: host mengirim segmen [SYN] dengan Seq=0 kepada server
+2. Paket No. 476: server membalas dengan segmen [SYN, ACK] dengan Seq=0, Ack=1
+3. Paket No. 478: host membalas dengan segmen [ACK] Seq=1, Ack=1, sehingga koneksi TCP resmi terbentuk
 
 Setelah handshake selesai, pada paket No. 480 barulah host mengirimkan permintaan HTTP GET menuju path /wireshark-labs/alice.txt
 
